@@ -1,0 +1,106 @@
+/* DESKTOP */
+
+/* Thematic elements:
+Background, headings, buttons: (very light gray): hsl(0, 0%, 95%)
+*/
+
+.page {
+  max-width: 1440px;
+  margin: 0px auto 0px auto;
+  position: relative;
+}
+
+a:hover {
+  color: #d96a18; /* change color */
+}
+
+body {
+	font-size: 15px;
+	color: hsla(0, 0%, 100%, 0.75); /*. Transparent white */
+}
+
+/***** GRID *****/
+.full-width {
+  width: 100%; /*** 1440px ***/
+  margin: 0 auto;
+}
+
+.half-width {
+  width: 50%; /*** 720px ***/
+  float: left;
+}
+
+.third-width {
+  width: 33%; /***  480px ***/
+  float: left;
+}
+
+.quarter-width {
+	width: 25%;
+	float: left;
+}
+
+/*** BODY ***/
+/* 1440/3 = 480 */
+
+div {
+	padding: 48px;
+}
+
+h2 {
+	font-family: "Big Shoulders Display", sans-serif;
+	text-transform: uppercase;
+	color: #f2f2f2;
+}
+
+p {
+	margin: 0 45px 80px 0;
+	font-family: "Lexend Deca", sans-serif;
+	color: #ffffff;
+	opacity: 0.75;
+}
+
+.div-sedans {
+	background-color: #e38826;
+}
+
+.div-suvs {
+	background-color: #006970;
+}
+
+.div-luxury {
+	background-color: #004241;
+}
+
+/*** BUTTONS ***/
+
+button {
+	font-family:  "Lexend Deca", sans-serif;
+	background-color: #f2f2f2;
+	width: 150px;
+	padding: 10px;
+	border-radius: 20px;
+	border: none;
+}
+
+.sedan-btn {
+	color: #e38826;
+}
+
+.suv-btn {
+	color: #006970;
+}
+
+.luxury-btn {
+	color: #004241;
+}
+
+/*** FOOTER ***/
+
+footer {
+	clear: both;
+}
+
+footer p {
+	font-size: 75%;
+}
