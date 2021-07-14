@@ -10,8 +10,13 @@ Background, headings, buttons: (very light gray): hsl(0, 0%, 95%)
   position: relative;
 }
 
+a {
+  text-decoration: none;
+  color: #011616;
+}
+
 a:hover {
-  color: #d96a18; /* change color */
+  color: #e38826; /* change color */
 }
 
 body {
@@ -19,32 +24,30 @@ body {
 	color: hsla(0, 0%, 100%, 0.75); /*. Transparent white */
 }
 
+
 /***** GRID *****/
+
 .full-width {
-  width: 100%; /*** 1440px ***/
-  margin: 0 auto;
+  /* width: 100%; /*** 1440px ***/ */
+  /* margin: 0 auto; */
 }
 
 .half-width {
-  width: 50%; /*** 720px ***/
-  float: left;
+  /* width: 50%; /*** 720px ***/ */
+  /* float: left; */
 }
 
 .third-width {
-  width: 33%; /***  480px ***/
-  float: left;
+  /* width: 33%; /***  480px ***/ */
+  /* float: left; */
 }
 
-.quarter-width {
-	width: 25%;
-	float: left;
-}
 
 /*** BODY ***/
-/* 1440/3 = 480 */
 
 div {
-	padding: 48px;
+  margin-top: 25px;
+  padding: 48px 15px 48px 48px;
 }
 
 h2 {
@@ -54,7 +57,7 @@ h2 {
 }
 
 p {
-	margin: 0 45px 80px 0;
+	margin: 0 35px 90px 0;
 	font-family: "Lexend Deca", sans-serif;
 	color: #ffffff;
 	opacity: 0.75;
@@ -62,43 +65,74 @@ p {
 
 .div-sedans {
 	background-color: #e38826;
+  float: left;
+  width: 250px;
+  margin-left: 70px;
+  border-radius: 5px 0 0 5px;
 }
 
 .div-suvs {
 	background-color: #006970;
+  float: left;
+  width: 250px;
 }
 
 .div-luxury {
 	background-color: #004241;
+  float: left;
+  width: 250px;
+  border-radius: 0 5px 5px 0;
 }
 
 /*** BUTTONS ***/
 
 button {
 	font-family:  "Lexend Deca", sans-serif;
-	background-color: #f2f2f2;
+	background-color: hsl(0, 0%, 95%);
 	width: 150px;
 	padding: 10px;
 	border-radius: 20px;
 	border: none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .sedan-btn {
 	color: #e38826;
+  border: 2px solid;
+}
+
+.sedan-btn:hover {
+  background-color: #e38826;
+  color: hsl(0, 0%, 95%);
 }
 
 .suv-btn {
 	color: #006970;
+  border: 2px solid;
 }
 
-.luxury-btn {
+.suv-btn:hover {
+  background-color: #006970;
+  color: hsl(0, 0%, 95%);
+}
+
+.lux-btn {
 	color: #004241;
+  border: 2px solid;
+}
+
+.lux-btn:hover {
+  background-color: #004241;
+  color: hsl(0, 0%, 95%);
 }
 
 /*** FOOTER ***/
 
 footer {
 	clear: both;
+  margin-left: 70px;
 }
 
 footer p {
